@@ -15,16 +15,16 @@ while wait(1) do -- ESP Loop
 	local function updateMap()
 		if workspace.Map:FindFirstChild("House") then
 			map = "House"
-		elseif workspace.Map:FindFirstChild("HouseEz") then
-			map = "HouseEz"
-		elseif workspace.Map:FindFirstChild("House 2") then
-			map = "House 2"
-		elseif workspace.Map:FindFirstChild("House 2Ez") then
-			map = "House 2Ez"
-		elseif workspace.Map:FindFirstChild("House 3") then
-			map = "House 3"
-		elseif workspace.Map:FindFirstChild("House 3Ez") then
-			map = "House 3Ez"
+		elseif workspace.Map:FindFirstChild("House easy") then
+			map = "House easy"
+		elseif workspace.Map:FindFirstChild("House II") then
+			map = "House II"
+		elseif workspace.Map:FindFirstChild("House II easy") then
+			map = "House II easy"
+		elseif workspace.Map:FindFirstChild("Mansion") then
+			map = "Mansion"
+		elseif workspace.Map:FindFirstChild("Mansion easy") then
+			map = "Mansion easy"
 		elseif workspace.Map:FindFirstChild("School") then
 			map = "School"
 		elseif workspace.Map:FindFirstChild("Ski resort") then
@@ -33,7 +33,7 @@ while wait(1) do -- ESP Loop
 			map = ""
 		end
 	end
-
+	
 	updateMap()
 	
 	if workspace.Map:FindFirstChild(map) then
